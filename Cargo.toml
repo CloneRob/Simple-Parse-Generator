@@ -1,0 +1,6 @@
+[package]
+name = "parse_generator"
+version = "0.1.0"
+authors = ["CloneRob <ropamen@gmail.com>"]
+
+[dependencies]

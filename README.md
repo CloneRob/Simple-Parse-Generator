@@ -12,7 +12,7 @@ must consist of only one character. Meaningful error messages are also on the to
 
   ...
 
-  let parser = Parser::new(grammar, &set_builder).unwrap();
+  let parser = Parser::new(grammar, set_builder).unwrap();
   parser.parse("input$")
 ```
 

@@ -16,10 +16,10 @@ must consist of only one character. Meaningful error messages are also on the to
   parser.parse("input$")
 ```
 
-If the supplied grammar does not a LL(1) gramamr Parser::new() will return an error;
-If the input is not '$' terminated or is not derivable from the supplied grammar One
-will get an error of the form:
-```
+If the supplied is not a LL(1) grammar, Parser::new() will return an error;
+If the input is not '$' terminated or is not derivable from the supplied grammar the error
+will be of the following form:
+```rust
   enum ParseError {
       In(InputErr),
       TableErr,

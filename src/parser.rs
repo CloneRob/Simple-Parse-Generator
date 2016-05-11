@@ -35,7 +35,7 @@ impl<'rule> Parser<'rule> {
         }
     }
 
-    pub fn input_eof(src: &str) -> Result<&'static str, InputErr> {
+    fn input_eof(src: &str) -> Result<&'static str, InputErr> {
         let last_symbol = src[..].chars().last();
         if let Some(symbol) = last_symbol {
             if symbol != '$' {
@@ -48,7 +48,7 @@ impl<'rule> Parser<'rule> {
         }
     }
 
-    pub fn build_table
+    fn build_table
         (set_builder: &SetBuilder<'rule>,
          grammar: &Grammar<'rule>)
          -> Result<HashMap<(char, char), Option<(char, &'rule str)>>, &'static str> {

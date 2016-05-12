@@ -8,7 +8,7 @@ must consist of only one character. Meaningful error messages are also on the to
 ##Usage
 
 ```rust
-  let set_builder = SetBuilder::new(&grammar);
+  let set_builder = SetBuilder::build(&grammar);
 
   ...
 
